@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DT — Applicant Storyboard (Frontend Challenge)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="DeepThought logo" class="logo" />
+      <h1>Applicant Storyboard</h1>
+    </div>
+    <div class="header-actions">
+      <button id="board-toggle" class="btn" aria-pressed="false" title="Collapse or expand journey board">Toggle Board</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside id="journeyBoard" class="journey-board expanded" aria-label="Journey board">
+      <div class="board-top">
+        <h2>Journey</h2>
+      </div>
+      <ul id="taskList" class="task-list" role="list"></ul>
+    </aside>
+
+    <main id="mainContent" class="main-content">
+      <section id="taskHeader" class="task-header">
+        <h2 id="taskTitle">Loading...</h2>
+        <p id="taskMeta" class="muted"></p>
+      </section>
+
+      <section id="assetsContainer" class="assets-container" aria-live="polite">
+        <!-- Assets will be appended here -->
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <small>Built for DT Frontend challenge — vanilla JS, reusable components.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
